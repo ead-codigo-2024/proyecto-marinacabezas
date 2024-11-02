@@ -58,13 +58,15 @@ p {
     font-size: 1.2em;
     line-height: 1.6em;
     color: var(--text);
-    margin-bottom: 3em;
+    margin-bottom: 1em;
 }
+
 h2 {
     font-family: "Acuta", serif;
     font-weight: 400;
     font-size: 2em;
     color: var(--text);
+    margin-top: 1.5em;
     margin-bottom: 0.5em;
 }
 
@@ -72,6 +74,18 @@ h1 {
     font-family: "Acuta", serif;
     font-weight:600;
     font-size: 3em;
+    grid-column-start: 3;
+    grid-column-end: 11;
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+}
+
+h3 {
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 1em;
 }
 
 .autor {
@@ -79,5 +93,158 @@ h1 {
     font-weight: 100;
     font-style: italic;
     font-size: 1em;
-    color: var(--text)
+    color: var(--text);
+    grid-column-start: 3;
+    grid-column-end: 11;
+    margin-bottom: 2em;
+}
+
+.textContainer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin-left: 64px;
+    margin-right: 64px;
+}
+
+.mainText {
+    grid-column-start: 3;
+    grid-column-end: 11;
+}
+
+.abstract {
+    font-family: "Raleway", sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--text);
+    grid-column-start: 6;
+    grid-column-end: 11;
+    padding: 2em;
+    margin-bottom: 2.5em;
+    line-height: 1.5em;
+}
+
+.corner-border {
+    position: relative;
+}
+
+.corner-border::before,
+.corner-border::after {
+    content: '';
+    position: absolute;
+    width: 20px; /* Ajusta el tamaño según sea necesario */
+    height: 20px; /* Ajusta el tamaño según sea necesario */
+    border: 3px solid var(--accent);
+}
+
+.corner-border::before {
+    top: 0;
+    left: 0;
+    border-right: none;
+    border-bottom: none;
+}
+
+.corner-border::after {
+    bottom: 0;
+    right: 0;
+    border-left: none;
+    border-top: none;
+}
+
+.corner-border::before,
+.corner-border::after {
+    content: '';
+    position: absolute;
+    width: 20px; /* Ajusta el tamaño según sea necesario */
+    height: 20px; /* Ajusta el tamaño según sea necesario */
+    border: 3px solid var(--accent);
+}
+
+.corner-border::before {
+    top: 0;
+    left: 0;
+    border-right: none;
+    border-bottom: none;
+}
+
+.corner-border::after {
+    bottom: 0;
+    right: 0;
+    border-left: none;
+    border-top: none;
+}
+
+.corner-border::before,
+.corner-border::after {
+    content: '';
+    position: absolute;
+    width: 20px; /* Ajusta el tamaño según sea necesario */
+    height: 20px; /* Ajusta el tamaño según sea necesario */
+    border: 3px solid var(--accent);
+}
+
+.corner-border::before {
+    top: 0;
+    left: 0;
+    border-right: none;
+    border-bottom: none;
+}
+
+.corner-border::after {
+    bottom: 0;
+    right: 0;
+    border-left: none;
+    border-top: none;
+}
+
+.contexto {
+    font-family: "Raleway", sans-serif;
+    font-size: 0.8em;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--text);
+    grid-column-start: 3;
+    grid-column-end: 11;
+    padding: 2em;
+    padding-bottom: 0;
+    border: 1px solid var(--text);
+    margin-bottom: 2.5em;
+}
+
+
+footer {
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0 0;
+    padding: 80px;
+}
+
+.logoRevista {
+    height: 50px;
+    width: auto;
+}
+
+.logoUC {
+    height: 70px;
+    width: auto;
+    margin-left: 30px;
+}
+
+.footerLogos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-family: "Raleway", sans-serif;
+    font-size: 0.8em;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--background);
+    text-align: center;
+    max-width: 600px;
 }
