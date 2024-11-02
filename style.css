@@ -1,0 +1,83 @@
+:root {
+    --text: #040316;
+    --background: #fbfbfe;
+    --primary: #2f27ce;
+    --secondary: #dddbff;
+    --accent: #443dff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    background-color: var(--primary);
+}
+
+nav a img {
+    height: 40px;
+    margin: 5px 5px 5px 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 0px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--background);
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    display: block;
+    padding: 25px 15px;
+}
+
+li a:hover {
+    background-color: var(--accent);
+}
+
+p {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    color: var(--text);
+    margin-bottom: 3em;
+}
+h2 {
+    font-family: "Acuta", serif;
+    font-weight: 400;
+    font-size: 2em;
+    color: var(--text);
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    font-family: "Acuta", serif;
+    font-weight:600;
+    font-size: 3em;
+}
+
+.autor {
+    font-family: "Acuta", serif;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 1em;
+    color: var(--text)
+}
