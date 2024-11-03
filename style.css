@@ -89,6 +89,7 @@ h3 {
 }
 
 .autor {
+    display: inline-flex;
     font-family: "Acuta", serif;
     font-weight: 100;
     font-style: italic;
@@ -254,6 +255,7 @@ footer p {
     grid-template-columns: repeat(4, 1fr);
     margin-left: 64px;
     margin-right: 64px;
+    margin-bottom: 3em;
     gap: 20px;
 }
 
@@ -336,8 +338,33 @@ footer p {
     font-style: normal;
     text-decoration: none;
     color: var(--text);
-    border: 1px solid var(--text);
+    border: 2px solid var(--text);
     padding: 1em;
     align-self: flex-end;
     margin: auto 20px 20px auto;
+}
+
+.emergentes-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 64px;
+    margin-right: 64px;
+    gap: 20px;
+    padding-top: 2em;
+}
+
+.emergentes {
+    background-color: var(--secondary);
+    margin: 0px;
+    padding-top: 2em;
+    padding-bottom: 4em;
+}
+
+.section-title {
+    font-family: "Raleway",sans-serif;
+    font-size: 4em;
+    font-style: bold;
+    font-weight: 800;
+    color: var(--primary);
+    margin-left: 64px;
 }
