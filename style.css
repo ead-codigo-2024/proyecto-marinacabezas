@@ -212,7 +212,6 @@ h3 {
     margin-bottom: 2.5em;
 }
 
-
 footer {
     background-color: var(--primary);
     display: flex;
@@ -356,15 +355,58 @@ footer p {
 .emergentes {
     background-color: var(--secondary);
     margin: 0px;
+    margin-bottom: 3em;
     padding-top: 2em;
     padding-bottom: 4em;
 }
 
-.section-title {
+.section-title1 {
     font-family: "Raleway",sans-serif;
     font-size: 4em;
     font-style: bold;
     font-weight: 800;
     color: var(--primary);
     margin-left: 64px;
+}
+
+.recomendados-cards {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-right: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardHorizontal {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--background);
+    transition: transform 0.2s;
+    border-radius: 20px;
+    position: relative;
+    margin-top: 3em;
+    margin-bottom: 20px;
+    justify-self: center;
+}
+
+.cardHorizontal:hover {
+    transform: scale(1.05);
+}
+
+.cardHorizontal img {
+    width: auto;
+    max-width: 350px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 0 0 20px;
+}
+
+.cardHorizontal-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 15px;
 }
