@@ -100,6 +100,16 @@ h3 {
     margin-bottom: 2em;
 }
 
+.autor-card {
+    display: inline-flex;
+    font-family: "Acuta", serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1em;
+    color: var(--text);
+    margin-bottom: 1em;
+}
+
 .textContainer {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -410,3 +420,4 @@ footer p {
     width: 100%;
     padding: 15px;
 }
+
