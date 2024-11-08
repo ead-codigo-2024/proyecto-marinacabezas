@@ -259,6 +259,7 @@ h3 {
     font-style: italic;
     color: var(--text);
     padding: 1em;
+    text-align: center;
 }
 
 .qLeft {
